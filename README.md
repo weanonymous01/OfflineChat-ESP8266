@@ -82,11 +82,9 @@ No external Arduino libraries needed. Only built-in `ESP8266WiFi` and `ESP8266We
 ## File Structure
 
 ```
-OfflineChat/
+OfflineChat-ESP8266/
 ├── Board1_v3/
 │   └── Board1_v3.ino       ← Flash this to your ESP8266
-├── Board2_v3/
-│   └── Board2_v3.ino       ← Optional second board (client node)
 └── README.md
 ```
 
@@ -116,7 +114,7 @@ If the board was used before:
 - **Tools → Board → NodeMCU 1.0 (ESP-12E Module)**
 - **Tools → Port** → select your COM port
 - Click **Upload**
-- If you see `Connecting.....____` — hold the **FLASH button** on the board until writing starts
+- If you see `Connecting.....____` — hold the **FLASH button + Press Reset Button then release: FLASH button** on the board until writing starts
 
 ### 5. Verify It's Running
 - Open **Tools → Serial Monitor** → baud rate: **115200**
@@ -198,6 +196,3 @@ Everyone connected to the same hotspot sees messages in real time.
 
 ---
 
-## License
-
-MIT — do whatever you want with it.
